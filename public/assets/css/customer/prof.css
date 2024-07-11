@@ -1,0 +1,161 @@
+/* Main content styles */
+
+
+/* .profile-name {
+    margin: 10px 0;
+    font-size: 1.2em;
+} */
+
+
+
+
+
+/* .prof-picture button {
+    float: right;
+    align-self: flex-end;
+} */
+
+
+
+.vw-btn {
+    width: 150px;
+    height: 36px;
+    background-color: wheat;
+    border-color: black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.vw-btn:hover {
+    background: #fff;
+    color: black;
+    border: none;
+    transform: scale(1.1);
+}
+
+.vw {
+    margin-top: 10px;
+    float: right;
+}
+
+/* .dts-btn {
+    width: 132px;
+    height: 36px;
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.dts-btn:hover {
+    background: #fff;
+    color: black;
+    border: none;
+} */
+
+.search {
+    float: right;
+}
+
+.search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search button:hover {
+    background: #ccc;
+}
+
+.search img {
+    height:15px;
+    width:15px;
+}
+
+
+
+/* .mycontent td a {
+    background-color: #007bff;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    width: 50%;
+    margin: 10px;
+} */
+
+.vd .view {
+    background-color: rgb(18, 201, 18);
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+    display: block;
+    width: 50%;
+    margin: 5px;
+    transition: .5s;
+    text-align: center;
+}
+
+.vd .delete {
+    background-color: red;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+    display: block;
+    width: 50%;
+    margin: 5px;
+    transition: .5s;
+    text-align: center;
+}
+
+.vd .view:hover {
+    background-color: rgb(1, 68, 1);
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+.vd .delete:hover {
+    background-color: rgb(125, 0, 0);
+    color: white;
+    border: black;
+    transform: scale(1.1);
+}
+
+.vd {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+

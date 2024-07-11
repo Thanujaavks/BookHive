@@ -1,0 +1,166 @@
+.my-content {
+    padding: 20px;
+    background-color: #F4F4F4;
+    right: 0px;
+    min-height: 600px;
+}
+
+.content-topic h2 {
+    background-color: #81cec9;
+    color: black;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mycontent {
+    width: 70%;
+    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* display: table; Add this line */
+}
+
+
+.mycontent table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 2px solid #333; */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mycontent th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+.mycontent td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.mycontent tr {
+    background-color: white;
+    height: 30px;
+}
+
+.mycontent tr:hover {
+    background-color: #f2f2f2;;
+}
+
+/* Change the width of specific columns */
+.mycontent th:nth-child(1), .mycontent td:nth-child(1) {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.mycontent th:nth-child(2), .mycontent td:nth-child(2) {
+    width: 20%; /* Adjust the width as needed */
+}
+
+.mycontent th:nth-child(3), .mycontent td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.content-search {
+    float: right;
+}
+
+.content-search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.c-vw-btn {
+    width: 150px;
+    height: 36px;
+    background-color: #009D94;;
+    /* border-color: black; */
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.c-vw-btn:hover {
+    background: #fff;
+    color: black;
+    border: none;
+    transform: scale(1.1);
+}
+
+.c-vw {
+    margin-top: 10px;
+    float: right;
+}
+
+@media screen and (max-width:600px) {
+    .content-topic h2 {
+        font-size: 18px;
+    }
+
+    .mycontent th {
+        font-size: 12px;
+    }
+    .mycontent td {
+        font-size: 12px;
+    }
+
+    .content-search input[type=text] {
+        /* background-color: black; */
+        font-size: 12px;
+    }
+
+    .c-vw-btn {
+        width: 120px;
+        height: 32px;
+        font-size: 0.9em;
+    }    
+}
+
+@media screen and (max-width:400px) {
+    .content-topic h2 {
+        font-size: 14px;
+    }
+
+    .mycontent th {
+        font-size: 10px;
+    }
+    .mycontent td {
+        font-size: 10px;
+    }
+
+    .content-search input[type=text] {
+        /* background-color: black; */
+        font-size: 8px;
+    }
+    
+    .mycontent td:nth-child(2), .mycontent th:nth-child(2) {
+      display: none;
+    }
+
+    .c-vw-btn {
+        width: 100px;
+        height: 28px;
+        font-size: 0.7em;
+    }
+
+    .mycontent table {
+        margin-top: 0;
+    }
+}

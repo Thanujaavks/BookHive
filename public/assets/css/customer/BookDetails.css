@@ -1,0 +1,664 @@
+.main-detail {
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    min-height: 725px;
+    margin: 90px 0px 10px 0px;
+    /* background-color: #CACACA; */
+    padding: 20px;
+}
+
+.book-img-des {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1rem;
+    /* background-color:  rgb(247,247,247); */
+    border-radius: 10px;
+}
+
+.book-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.book-img-des img {
+    height: 330px;
+    width: 270px;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+}
+
+.sub3, .sub4, .sub5 {
+    padding: 10px;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background-color:  rgb(247,247,247);
+}
+
+.sub3 {
+    width: 100%;
+}
+
+.sub4, .sub5 {
+    width: 50%;
+}
+
+.sub3 p {
+    text-align: justify;
+}
+
+.new-book-details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 1rem;
+    background-color:  rgb(247,247,247);
+    border-radius: 10px;
+}
+
+.sub4 span, .sub5 span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.chat-btn {
+    float: right;
+    width: 132px;
+    height: 36px;
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-btn:hover {
+    background: #fff;
+    color: black;
+    border: none;
+}
+
+.chat-dlt-btn {
+    float: right;
+    width: 132px;
+    height: 36px;
+    background-color: red;
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-dlt-btn:hover {
+    background: #fff;
+    color: black;
+    border: none;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 10px;
+    /* background-color: #fff; */
+}
+
+.back-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-top: 10px; */
+    padding-left: 10px;
+    /* background-color: #fff; */
+}
+
+.back-btn {
+    width: 80px;
+    height: 30px;
+    background-color:  rgb(1, 36, 33);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #fff;
+    color: black;
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#quantity {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.add-to-cart {
+    background-color:  rgb(1, 36, 33);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #fff;
+    color: black;
+}
+
+.comment-newbooks {
+    background-color:  rgb(247,247,247);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.send-review {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* gap:1rem; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+
+
+.stars {
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    height: 325px;
+}
+
+.give-rate {
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    height: 325px;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+  
+.fa {
+    font-size: 25px;
+}
+  
+.checked {
+    color: orange;
+}
+  
+ /* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+  
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+  
+/* Clear floats after the columns */
+.row-rating {
+    content: "";
+    display: table;
+    clear: both;
+    /* background-color: #04AA6D; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+  
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+  
+/* Individual bars */
+.bar-5 { height: 18px; background-color: #04AA6D;}
+.bar-4 { height: 18px; background-color: #2196F3;}
+.bar-3 { height: 18px; background-color: #00bcd4;}
+.bar-2 { height: 18px; background-color: #ff9800;}
+.bar-1 { height: 18px; background-color: #f44336;}
+
+.my-review {
+    /* background-color: #00bcd4; */
+    padding: 5px;
+    width: 100%;
+}
+
+.my-review textarea{
+    width: 100%;
+    height: 178px;
+    padding: 5px;
+}
+
+.submit-review {
+    background-color:  rgb(1, 36, 33);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.submit-review:hover {
+    background: #fff;
+    color: black;
+}
+
+
+
+
+
+.filter-by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px;
+    border-radius: 10px;
+    gap:1rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.filter-by h3 {
+    padding: 5px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.filter-by h3:hover {
+    cursor: pointer;
+    /* transform: scale(1.1);
+    transition: transform .5s; */
+    background-color: #CACACA;
+}
+.sort-by-star {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.sort-by-star select {
+    padding: 6px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.cus-rev {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    width:100%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.reviews {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cus-name-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 10px;
+    padding-bottom: 1px;
+    gap:0.5rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.cus-name-img img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.rev-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    padding-top: 1px;
+    gap: 0.5rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.rev-date img {
+    height: 25px;
+    width: 100px;
+}
+
+.reviews p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.helpful {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.yes-no {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 5px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.yes-no h3 {
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+}
+
+.yes-no h3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s;
+    background-color: #CACACA;
+}
+
+.reviews h5 {
+    padding: 10px;
+}
+/*  */
+.give-rate .post{
+    display: none;
+  }
+  .give-rate .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+  }
+  .give-rate .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .give-rate .edit:hover{
+    text-decoration: underline;
+  }
+  .give-rate .my-rate input{
+    display: none;
+  }
+.my-rate label{
+    font-size: 30px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+   
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input #rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+form {
+    counter-reset: rating;
+  }
+  
+  /* Define content for different ratings */
+  #rate-1:checked ~ header:before {
+    content: "I just hate it ";
+  }
+  #rate-2:checked ~ header:before {
+    content: "I don't like it ";
+  }
+  #rate-3:checked ~ header:before {
+    content: "It is awesome ";
+  }
+  #rate-4:checked ~ header:before {
+    content: "I just like it ";
+  }
+  #rate-5:checked ~ header:before {
+    content: "I just love it ";
+  }
+  
+  /* Increment rating counter for each checked input */
+  .my-rate input:checked {
+    counter-increment: rating;
+  }
+  
+  /* Hide header when no rating is selected */
+  header:before {
+    content: "";
+  }
+input:checked ~ form{
+    display: block;
+  }
+
+.stock-div {
+    /* background-color: #04AA6D; */
+    text-align:center;
+    color: #666;
+    border-radius:50%;
+}
+
+/* .outStock {
+    background-color: #f44336;
+    border-radius:50%;
+    width: 50%;
+} */
+
+.before-cart {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .book-img-des img {
+        height: 220px;
+        width: 180px;
+        box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .book-img-des {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .book-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .book-img-des img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .send-review {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stars {
+        padding: 20px;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+    }
+    
+    .give-rate {
+        padding: 10px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        /* height: 325px; */
+    }
+}
+
+@media screen and (max-width:600px) {
+    .book-img-des {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .book-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .book-img-des img {
+        height: 180px;
+        width: 150px;
+    }
+
+    /* .send-review {
+        flex-direction: row;
+    } */
+    .new-book-details {
+        flex-direction: column;
+    }
+
+    .sub4, .sub5 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .book-img {
+        flex-direction: column;
+    }
+    
+    .book-img-des img {
+        height: 180px;
+        width: 150px;
+    }
+
+    .yes-no {
+        display: flex;
+        flex-direction: column;
+    }
+    .side, .middle {
+        width: 100%;
+    }
+      .right {
+        display: none;
+    }
+
+    .row-rating {
+        height: 180px;
+    }
+
+    .give-rate {
+       height: 350px;
+    }
+
+    .my-rate label{
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .give-rate {
+        height: 380px;
+    }
+}

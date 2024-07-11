@@ -1,0 +1,348 @@
+.add-content {
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+.cont-add, .book-add {
+    background-color: white;
+    margin: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.topic-cont, .topic-book {
+    margin-top: 10px;
+    min-height: 120px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+
+.author {
+    margin-top: 0px;
+}
+
+.disc-cont, .disc-book {
+    min-height: 120px;
+    width: 100%;
+    padding: 20px;
+    /* background-color:blueviolet; */
+}
+
+.upload-doc, .upload-pages {
+    margin-bottom: 10px;
+    min-height: 120px;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color:darksalmon; */
+}
+
+.upload-doc-content {
+    margin-bottom: 20px;
+    min-height: 120px;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    /* background-color:darksalmon; */
+}
+
+.book-cate {
+    margin-bottom: 0px;
+}
+
+/* .img-cont {
+    background-color: bisque;
+    padding: auto;
+} */
+
+.topic-cont input[type="text"], .disc-cont textarea, .topic-book input[type="text"], .disc-book textarea, .topic-book input[type="Date"], .upload-doc input[type="file"], .upload-pages input[type="file"], .topic-book select, .topic-book button, .topic-book input[type="number"], .topic-book input[type="email"], .topic-cont select, .topic-cont input[type="Date"], .topic-cont input[type="time"], .upload-doc-content input[type="file"] { 
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #eeeeef;
+    border-radius: 5px;
+}
+
+.disc-book input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #eeeeef;
+    border-radius: 5px;
+}
+
+.add-remove-btn {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap:5px
+}
+
+.RemoveInputButton {
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    width: 20%;
+    padding: 8px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+}
+
+.AddOneButton {
+    /* float: right; */
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    width: 20%;
+    padding: 8px;
+    /* margin-right:15px; */
+}
+
+.upload-doc input[type="file"], .upload-pages input[type="file"], .upload-doc-content input[type="file"]{
+    background-color: white;
+}
+
+.cont-add input[type="submit"], .book-add input[type="submit"] {
+    /* float: right; */
+    width: 132px;
+    height: 36px;
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    /* margin-left: 8px; */
+    margin-right: 8px;
+    /* margin-bottom: 0; */
+    /* margin-top: 120px; */
+}
+
+.cont-add input[type="submit"]:hover, .book-add input[type="submit"]:hover, .topic-book button:hover {
+    background: #fff;
+    color: black;
+    border-color: black;
+}
+
+.topic-book button {
+    background-color: rgb(1, 36, 33);
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+
+.book-add hr {
+    color: black;
+    font-weight: 600;
+    width: 100%;
+}
+
+.weight2 {
+    /* background-color:aquamarine; */
+    padding-top: 39px;
+}
+
+
+@media screen and (max-width:700px) {
+    .add-content {
+        padding: 5px;
+    }
+    .upload-doc, .upload-pages {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upload-doc-content {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        /* background-color:darksalmon; */
+    }
+
+    .img-cont, .pdf-cont {
+        width: 100%;
+        padding: 20px;
+        margin: 0px;
+        /* background-color: chartreuse; */
+    }
+
+    .img-cont-content {
+        width: 100%;
+        padding: 20px;
+        margin: -20px;
+        /* background-color: chartreuse; */
+    }
+
+    .weight {
+        min-height: 60px;
+        /* background-color: aqua; */
+        padding-bottom: 0px;
+    }
+
+    .weight2 {
+        padding-top: 0px;
+        /* background-color: brown; */
+    }
+    
+    .RemoveInputButton {
+        width: 30%;
+    }
+    
+    .AddOneButton {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .add-content h1{
+        font-size: 16px;
+    }
+    
+    .topic-cont input[type="text"], .disc-cont textarea, .topic-book input[type="text"], .disc-book textarea, .topic-book input[type="Date"], .upload-doc input[type="file"], .upload-pages input[type="file"], .topic-book select, .topic-book button, .topic-book input[type="number"], .topic-book input[type="email"], .topic-cont select, .topic-cont input[type="Date"], .topic-cont input[type="time"], .upload-doc-content input[type="file"]{
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+    
+    }
+
+    .disc-book input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    .upload-doc-content input[type="file"]{
+        background-color: white;
+        font-size: 12px;
+        max-width: 170px;
+    }
+    
+    .label-topic {
+        font-size: 12px;
+    }
+
+    .cont-add input[type="submit"], .book-add input[type="submit"] {
+        /* float: right; */
+        width: 100px;
+        height: 28px;
+    }
+
+    .topic-cont, .topic-book {
+        margin-top: 5px;
+        min-height: 40px;
+        width: 100%;
+        padding: 10px;
+        /* background-color: aqua; */
+    }
+
+    .disc-cont, .disc-book {
+        min-height: 40px;
+        width: 100%;
+        padding: 10px;
+        /* background-color:blueviolet; */
+    }
+
+    .upload-doc, .upload-pages {
+        min-height: 40px;
+    }
+
+    .weight {
+        min-height: 10px;
+        /* background-color: aqua; */
+        padding-bottom: 0px;
+    }
+    .weight2 {
+        padding-top: 0px;
+        /* background-color: brown; */
+    }
+
+    .upload-doc-content {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:0.5rem;
+        /* background-color:darksalmon; */
+    }
+
+    .RemoveInputButton {
+        width: 50%;
+    }
+    
+    .AddOneButton {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .upload-doc-content {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:0.5rem;
+        /* background-color:darksalmon; */
+    }
+    .upload-doc-content input[type="file"]{
+        background-color: white;
+        font-size: 10px;
+        max-width: 130px;
+    }
+
+    .RemoveInputButton {
+        width: 70%;
+    }
+    
+    .AddOneButton {
+        width: 70%;
+    }
+}

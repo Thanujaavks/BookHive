@@ -1,0 +1,123 @@
+.my-favorite {
+    padding: 20px;
+    background-color:  #F4F4F4;
+    right: 0px;
+    min-height: 600px;
+}
+
+.favorite-topic h2 {
+    background-color: #81cec9;
+    color: black;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.myfavorite {
+    width: 70%;
+    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* display: table; Add this line */
+}
+
+.myfavorite table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 2px solid #333; */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myfavorite th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+.myfavorite td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.myfavorite tr {
+    background-color: white;
+    height: 30px;
+}
+
+.myfavorite tr:hover {
+    background-color: #f2f2f2;;
+}
+
+/* Change the width of specific columns */
+.myfavorite th:nth-child(1), .myfavorite td:nth-child(1) {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.myfavorite th:nth-child(2), .myfavorite td:nth-child(2) {
+    width: 20%; /* Adjust the width as needed */
+}
+
+.myfavorite th:nth-child(3), .myfavorite td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.favorite-search {
+    float: right;
+}
+
+.favorite-search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:600px) {
+    .favorite-topic h2 {
+        font-size: 18px;
+    }
+
+    .myfavorite th {
+        font-size: 12px;
+    }
+    .myfavorite td {
+        font-size: 12px;
+    }
+
+    .favorite-search input[type=text] {
+        /* background-color: black; */
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .favorite-topic h2 {
+        font-size: 14px;
+    }
+
+    .myfavorite th {
+        font-size: 10px;
+    }
+    .myfavorite td {
+        font-size: 10px;
+    }
+
+    .favorite-search input[type=text] {
+        /* background-color: black; */
+        font-size: 8px;
+    }
+
+    .myfavorite td:nth-child(2), .myfavorite th:nth-child(2) {
+      display: none;
+    }
+
+    .myfavorite table {
+        margin-top: 0;
+    }
+}

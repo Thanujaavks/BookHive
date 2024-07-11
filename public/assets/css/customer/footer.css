@@ -1,0 +1,23 @@
+
+footer {
+    background-color:#70bfba;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    text-align: left;
+}
+
+footer div {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: smaller;
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-size: smaller;
+}

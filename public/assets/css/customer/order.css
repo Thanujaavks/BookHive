@@ -1,0 +1,447 @@
+.my-orders {
+    padding: 20px;
+    background-color:  #F4F4F4;
+    right: 0px;
+    min-height: 600px;
+}
+
+.order-topic h2 {
+    background-color: #81cec9;
+    color: black;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.myorder {
+    width: 70%;
+    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* display: table; Add this line */
+}
+
+.myorder table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 2px solid #333; */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myorder th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+.myorder td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.myorder tr {
+    background-color: white;
+    height: 30px;
+}
+
+.myorder tr:hover {
+    background-color: #f2f2f2;;
+}
+
+/* Change the width of specific columns */
+.myorder th:nth-child(1), .myorder td:nth-child(1) {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.myorder th:nth-child(2), .myorder td:nth-child(2) {
+    width: 20%; /* Adjust the width as needed */
+}
+
+.myorder th:nth-child(3), .myorder td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.order-search {
+    float: right;
+}
+
+.order-search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 110;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 70%; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Close Button */
+.close {
+    color: #009D94;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    background-color: #009D94;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #009D94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #008077;
+}
+
+.ordertablediv {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ordertablediv table {
+    font-size: 14px;
+    width: 90%;
+    border-collapse: collapse;
+    /* border: 2px solid #333; */
+    margin-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ordertablediv-img {
+    width: 50px;
+    height: 100px;
+}
+
+.ordertablediv td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.ordertablediv tr {
+    background-color: white;
+    /* height: 30px; */
+}
+
+.ordertablediv tr:hover {
+    background-color: #f2f2f2;;
+}
+
+/* Change the width of specific columns */
+.ordertablediv td:nth-child(1) {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.ordertablediv td:nth-child(2) {
+    width: 40%; /* Adjust the width as needed */
+}
+
+.ordertablediv td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.delivery-fee {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.delivery-received {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.delivery-received button {
+    width: 40px;
+    height: 30px;
+    background-color: #009D94;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.delivery-status {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+  }
+  
+  .progress-bar-processing {
+    background-color: #ffc107; /* Yellow */ 
+  }
+  
+  .progress-bar-pickup {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .progress-bar-delivered {
+    background-color: #28a745; /* Green */
+  }
+  
+  .status-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .label {
+    text-align: center;
+  }
+  
+  .label i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #777;
+  }
+  .stars {
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    height: 325px;
+}
+
+.my-rate1 label{
+    align-items: left;
+    font-size: 30px;
+    color: #444;
+    padding: 10px;
+    float:right;
+    transition: all 0.2s ease;
+  }
+.verifyFeedBack{
+    width:100%;
+    border-radius: 6px;
+    height:40px;
+    
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input #rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+form {
+    counter-reset: rating;
+  }
+  
+  
+  /* Increment rating counter for each checked input */
+  .my-rate1 input:checked {
+    counter-increment: rating;
+  }
+  
+  /* Hide header when no rating is selected */
+  header:before {
+    content: "";
+  }
+input:checked ~ form{
+    display: block;
+  }
+
+.give-rate {
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    height: 325px;
+}
+
+.heading {
+    font-size: 15px;
+    margin-right: 0;
+}
+  
+.fa {
+    font-size: 15px;
+}
+  
+.checked {
+    color: orange;
+}
+  
+ /* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+  
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+  
+.radio{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .order-topic h2 {
+        font-size: 18px;
+    }
+
+    .myorder th {
+        font-size: 12px;
+    }
+    .myorder td {
+        font-size: 12px;
+    }
+
+    .order-search input[type=text] {
+        /* background-color: black; */
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ordertablediv td:nth-child(2) {
+        display: none;
+    }
+
+    .label i {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #777;
+    }
+
+    .delivery-fee h4 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .label i {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #777;
+    }
+
+    .delivery-fee h4 {
+        font-size: 12px;
+    }
+
+    .label span {
+        font-size: 12px;
+    }
+    .order-topic h2 {
+        font-size: 14px;
+    }
+
+    .myorder th {
+        font-size: 10px;
+    }
+    .myorder td {
+        font-size: 10px;
+    }
+
+    .order-search input[type=text] {
+        /* background-color: black; */
+        font-size: 8px;
+    }
+    
+    .myorder td:nth-child(2), .myorder th:nth-child(2) {
+        display: none;
+    }
+
+    .myorder table {
+        margin-top: 0;
+    }
+}

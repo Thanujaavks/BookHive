@@ -1,0 +1,207 @@
+.body{
+   margin:40px; 
+}
+
+.flex-parent-element {
+    /* display: flex;
+    width: 50%; */
+    margin:70px;
+    display: flex;
+  }
+  
+  .flex-child-element {
+   
+    padding:40px;
+    flex:1;
+    border-radius: 9px;
+    background-color:white;
+    margin-top:20px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 20px;
+  }
+
+.order{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.cost{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.col2{
+    justify-content:space-evenly;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+.subcost{
+    padding:20px;
+    /* margin-left: 20px; */
+}
+.subcost2{
+    padding:20px;
+    margin-left: 40px;
+}
+
+/* .cardPayment-form,
+.COD-form,
+.onlineBanking-form {
+    display: none;
+} */
+input[type="radio"]{
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+input[type="radio"]:checked + label {
+    background-color: #009D94;
+    color: #ffffff;
+  }
+input[type="text"],select{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   
+    border-radius: 5px;
+    outline: none;
+    border:none;
+
+}
+input[type="text"]:focus
+{
+    border: 2px solid #009D94;
+
+}
+input[type="number"]
+{
+   width:80px;
+   box-sizing: border-box;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: aliceblue;
+   border:none;
+   color:black;
+
+
+}
+.submit {
+    width: 90%;
+    height: 40px;
+    background-color: #009D94;
+    border-radius: 5px;
+    margin-top: 0;
+    border: none;
+    color:white;
+    
+}
+
+.submit:hover {
+    background-color: #70BFBA;
+    border-radius: 5px;
+    margin-top: 0;
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    /* border:white; */
+    width: 100%;
+    border: none; 
+}
+
+th, td {
+    /* border-bottom: 1px solid white;  */
+    padding: 10px; 
+    text-align: left;
+    border:none;
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+
+td:not(:last-child) {
+    margin-right: 10px; 
+}
+.quantity-button-p {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-button-p i {
+    font-size: 10px;
+}
+.quantity-button-c {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-button-c i {
+    font-size: 4px;
+}
+.span {
+    margin: 0 5px;
+}
+.redeem{
+    border-radius: 3px;
+    border:black;
+    padding:10px;
+    text-align: center;
+
+}
+.redeem input{
+    background-color: #eee;
+    border-radius: 5px;
+    border-collapse: calc();
+
+}
+.apply{
+    width:60px;
+    height: 20px;
+    background-color: #009D94;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    padding:5px;
+    margin-left:6px;
+}
+@media screen and (max-width: 768px) {
+    .flex-parent-element {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .flex-child-element {
+        width:100%;
+      margin-right: 0; /* Remove right margin */
+      margin-top: 20px; /* Adjust top margin */
+    }
+    img{
+        width:100%;
+    }
+    .flex-child-element.green {
+        overflow: auto; /* Enable vertical scrolling if necessary */
+        max-height: 400px; /* Set a maximum height for the container */
+      }
+      th, td {
+        white-space: nowrap; /* Prevent wrapping of table cells */
+      }
+  }
+  
