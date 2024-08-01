@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   
-    <!-- <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png"> -->
+    
     <title>Log in</title>
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/customer/LoginPageCSS.css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/signupCss.css" />
@@ -39,7 +39,7 @@
                 <button class="back-btn-login" onclick="history.back()"><i class="fa fa-angle-double-left"></i> Go Back</button>
             </div>
             <img src="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png">
-            <!-- <i class="fas fa-user-plus fa-5x"></i> -->
+            
             <h3>WELCOME TO</h3>
             <h2>BookHive</h2>
             <p>Here we introducing a web-based Platform for Buying

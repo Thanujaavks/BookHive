@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Select User Role </title>
-    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png">
+    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/signupCss.css" />
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/customer/LoginPageCSS.css">
 
