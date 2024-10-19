@@ -19,9 +19,9 @@
             <img id="logo" src=<?= URLROOT . "/assets/images/charity/bookHive.png" ?> alt="Logo">
         </div>
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="">Event Management</a>
-            <a href="">Donation Requests</a>
+        <a href="#" class="active">Home</a>
+            <a href="./event">Event Management</a>
+            <a href="donation">Donation Requests</a>
 
             <a href="">
                 <i class="fas fa-bell" id="bell"></i>

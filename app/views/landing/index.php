@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/logo.png"> -->
+    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png">
     <title>BookHive landing page</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     </div>
     <header>
         <div>
-            <img id="logo" src="<?php echo URLROOT; ?>/assets/images/landing/homepage/bookhive.png" alt="ReadSpot Logo">
+            <img id="logo" src="<?php echo URLROOT; ?>/assets/images/landing/homepage/bookhive.png" alt="BookHive Logo">
         </div>
         <nav>
             <a href="#" class="active">Home</a>

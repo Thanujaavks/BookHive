@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/charity/confirm-event.css">
-    <title>ReadSpot Online Book store</title>
+    <title>BookHive Online Book store</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     </div>
     <header>
         <div>
-            <img id="logo" src=<?= URLROOT . "/assets/images/charity/ReadSpot.png" ?> alt="Logo">
+            <img id="logo" src=<?= URLROOT . "/assets/images/charity/bookhive.png" ?> alt="Logo">
         </div>
         <nav>
             <a href="./">Home</a>
@@ -149,12 +149,12 @@
         <div>
             <p>Privacy Policy : All content included on this site, such as text, graphics, logos, button icons, images,
                 audio clips, digital downloads, data compilations,<br>
-                and software, is the property of READSPOT or its content suppliers and protected by Sri Lanka and
+                and software, is the property of BookHive or its content suppliers and protected by Sri Lanka and
                 international copyright laws...
             </p>
         </div>
         <div>
-            <p id="copyright" style=" color: black;">&copy; 2023 ReadSpot. All rights reserved.</p>
+            <p id="copyright" style=" color: black;">&copy; 2024 BookHive. All rights reserved.</p>
         </div>
     </footer>
 </body>

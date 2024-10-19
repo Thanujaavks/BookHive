@@ -68,9 +68,9 @@
             ?>
 
             // Submit form function
-            // function submitForm() {
-            //     document.getElementById("eventForm").submit();
-            // }
+            function submitForm() {
+                document.getElementById("eventForm").submit();
+            }
         </script>
 
         <?php

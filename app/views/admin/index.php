@@ -32,7 +32,7 @@
 
     <div class="message-panel">
       <h3>Messages for you</h3>
-      <!-- <div class="messages">
+      <div class="messages">
         <?php foreach($data['messageDetails'] as $message): ?>
         <a href="<?php echo URLROOT;?>/Chats/chat/<?php echo $message->outgoing_msg_id;?>">
         <div class="message">
@@ -43,7 +43,7 @@
           <p><?php echo $message->msg;?></p>
         </div></a>
         <?php endforeach;?>
-      </div> -->
+      </div>
     </div>
   </div>
 
@@ -126,7 +126,7 @@
           <th>Request ID</th>
           <th>Organization Name</th>
           <th>Type</th>
-          <th>Request Date</th>
+          <!-- <th>Request Date</th> -->
           <th>Actions</th>
         </tr>
       </thead>
@@ -136,7 +136,7 @@
           <td><?php echo $PendingUser->user_id;?></td>
           <td><?php echo $PendingUser->email;?></td>
           <td><?php echo $PendingUser->user_role;?></td>
-          <td><?php echo $PendingUser->created_at;?></td>
+          <!-- <td><?php echo $PendingUser->created_at;?></td> -->
           <td class="actions">
           <?php
             $userRole = '';

@@ -6,7 +6,7 @@
             <div class="contactus-div">
                 <h4><center>Contact Details</center></h4>
                 <ul>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i> &ensp;readspot@gmail.com</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> &ensp;bookhive@gmail.com</li>
                     <li><i class="fa fa-phone" aria-hidden="true"></i> &ensp;0712345689</li>
                     <li><i class="fa fa-address-card" aria-hidden="true"></i> &ensp;265, Main Street, Colombo 04</li>
                 </ul>
@@ -47,7 +47,7 @@
         <div class="contactus-div2">
             <h4><center>Contact Details</center></h4>
             <ul>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i> &ensp;readspot@gmail.com</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> &ensp;bookhive@gmail.com</li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i> &ensp;0712345689</li>
                 <li><i class="fa fa-address-card" aria-hidden="true"></i> &ensp;265, Main Street, Colombo 04</li>
             </ul>
@@ -62,7 +62,7 @@
     </div>
     <div class="footer-content2">
         <div class="footer-text">
-            &copy; 2023 Read Spot. All rights reserved.
+            &copy; 2024 BookHive. All rights reserved.
         </div>
     </div>
 </div>

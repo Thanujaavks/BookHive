@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/superadmin/addbooks.css" />
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/publisher/sidebar.css" />
-    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png">
+    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png">
     <title>Edit Account Details</title>
 </head>
 

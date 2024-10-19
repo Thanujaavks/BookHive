@@ -29,7 +29,7 @@
             <div class="back-btn-div-login">
                 <button class="back-btn-login" onclick="history.back()"><i class="fa fa-angle-double-left"></i> Go Back</button>
             </div>
-            <img src="<?php echo URLROOT; ?>/assets/images/customer/logo.png">
+            <img src="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png">
             <!-- <i class="fas fa-user-plus fa-5x"></i> -->
             <h3>WELCOME TO</h3>
             <h2>BookHive</h2>

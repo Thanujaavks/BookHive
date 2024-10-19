@@ -1,61 +1,70 @@
 <?php
-    $title = "Content";
-    require APPROOT . '/views/customer/header.php'; //path changed
+
+$title = "Content";
+require APPROOT . '/views/customer/header.php'; //path changed
 ?>
-    <?php
-        require APPROOT . '/views/customer/sidebar.php'; //path changed
-    ?>
-    <div class="container">
-        <div class="my-content">
-            <div class="content-topic">
-                <h2>My Contents</h2>
-            </div>
-            <?php if(empty($data['contentDetails'])): ?>
-                <?php echo '
-                    <br><br><h3 style="text-align:center;">No contents added yet.</h3>'; ?>
-            <?php else : ?>
+<?php
+    require APPROOT . '/views/customer/sidebar.php'; //path changed
+?>
+<div class="container">
+    <div class="my-content">
+        <div class="content-topic">
+            <h2>My Contents</h2>
+        </div>
+
+        <?php 
+        // Example: Add a variable here
+        $customMessage = "You currently have no content. Start adding content now!"; 
+        ?>
+
+        <?php if(empty($data)): ?>
+            <!-- Display the custom message -->
+            <br><br><h3 style="text-align:center;"><?php echo $customMessage; ?></h3>
+
+        <?php else : ?>
+
             <div class="mycontent">
                 <div class="content-search" id="searchForm" onsubmit="handleSearch()">
                     <input type="text" placeholder="Search.." name="search" id="searchInput">
                 </div>
                 <br>
                 <br>
-                <table border="1" id="eventTable">
-                    <thead>
-                        <tr>
-                            <th>Content Name</th>
-                            <th >Added-Date</th>
-                            <th>VIew/Delete </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($data['contentDetails'] AS $content): ?>
-                        <tr>
-                            <td><?php echo $content->topic; ?></td>
-                            <td><?php echo $content->time; ?></td>
-                            <td class="action-buttons">
-                                <a href="<?php echo URLROOT; ?>/customer/updateContent/<?php echo $content->content_id; ?>" style="text-decoration: none;">
-                                    <button class="update-button">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                </a>
-                                <a href="<?php echo URLROOT; ?>/customer/viewcontent/<?php echo $content->content_id; ?>" style="text-decoration: none;">
-                                    <button class="view-button">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </a>
-                                <a href="#" style="text-decoration: none;">
-                                    <button class="delete-button" onclick="showModal(<?php echo $content->content_id; ?>)">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </a>
-                            </td>
-                            <!-- <td><div class="c-vd"><a href="#" class="c-view">View</a><a href="#" class="c-delete">Delete</a></div></td> -->
-                        </tr>
-                        <?php endforeach; ?>
-                        
-                    </tbody>
-                </table>
+    <table border="1" id="eventTable">
+    <thead>
+        <tr>
+            <th>Content Name</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if (!empty($data)): ?>
+            <?php foreach($data['contentdDetail'] as $content): ?>
+                <tr>
+                    <td><?php echo $content->topic; ?></td>
+                    
+                    <td><?php echo $content->status; ?></td>
+                    <td class="action-buttons">
+                        <a href="<?php echo URLROOT; ?>/customer/updateContent/<?php echo $content->content_id; ?>" style="text-decoration: none;">
+                            <button class="update-button"><i class="fas fa-edit"></i></button>
+                        </a>
+                        <a href="<?php echo URLROOT; ?>/customer/viewcontent/<?php echo $content->content_id; ?>" style="text-decoration: none;">
+                            <button class="view-button"><i class="fas fa-eye"></i></button>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <button class="delete-button" onclick="showModal(<?php echo $content->content_id; ?>)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr><td colspan="3">No content available.</td></tr>
+        <?php endif; ?>
+    </tbody>
+</table>
+
             </div>
             <ul class="pagination" id="pagination">
                 <li id="prevButton">«</li>
@@ -71,12 +80,10 @@
                 <li>10</li>
                 <li id="nextButton">»</li>
             </ul>
-            <?php endif; ?>
-            <div class="c-vw">
-                <a href="<?php echo URLROOT; ?>/customer/AddCont"><button class="c-vw-btn">Add Content</button></a> <!--path changed-->
-            </div>
-            <br>
-            <br>
+        <?php endif; ?>
+        
+        <div class="c-vw">
+            <a href="<?php echo URLROOT; ?>/customer/AddCont"><button class="c-vw-btn">Add Content</button></a> <!--path changed-->
         </div>
 
         <div id="myModal" class="modal">
@@ -86,8 +93,8 @@
                 <button onclick="noModal()" style="background-color:red">No</button>
                 <!-- Hidden input field to store the content_id -->
                 <input type="hidden" id="contentId">
-            </div>
-        </div>
+    </div>
+</div>
 
         <script>
             function showModal(contentId) {
@@ -117,7 +124,3 @@
             }
         </script>
 
-        <?php
-            require APPROOT . '/views/customer/footer.php'; //path changed
-        ?>
-    </div>

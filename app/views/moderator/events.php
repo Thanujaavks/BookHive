@@ -56,8 +56,8 @@
         <th>Title</th>
         <th>Description</th>
         <th>Location</th>
-        <th>Start Date</th>
-        <th>End Date</th>
+        <!-- <th>Start Date</th> -->
+        <!-- <th>End Date</th> -->
         <th>Event Category</th>
         <th>Event Poster</th>
         <th>Action</th>
@@ -71,8 +71,8 @@
             <span class="see-more" onclick="showFullDescription('<?php echo $pendingEvent->description;?>')">See more..</span>
           </td>
           <td><?php echo $pendingEvent->location; ?></td>
-          <td><?php echo $pendingEvent->start_date; ?></td>
-          <td><?php echo $pendingEvent->end_date; ?></td>
+          <!-- <td><?php echo $pendingEvent->start_date; ?></td> -->
+          <!-- <td><?php echo $pendingEvent->end_date; ?></td> -->
           <td><?php echo $pendingEvent->category_name; ?></td>
           <td><img src="<?php echo URLROOT; ?>/assets/images/landing/addevents/<?php echo $pendingEvent->poster; ?>" onclick="fullView(this.src)"  style="width: 30%;"/></td>
           <td><button onclick="approvePopup('<?php echo $pendingEvent->user_id;?>','<?php echo $pendingEvent->id; ?>')">Approve</button>

@@ -145,7 +145,7 @@
                 </p>
             </div>
             <div>
-                <p id="copyright" style=" color: #00ffee;">&copy; 2023 BookHive. All rights reserved.</p>
+                <p id="copyright" style=" color: #00ffee;">&copy; 2024 BookHive. All rights reserved.</p>
             </div>
         </footer>
     </body>

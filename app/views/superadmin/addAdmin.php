@@ -13,7 +13,8 @@
 
 <body>
     <div>
-    <?php   require APPROOT . '/views/superadmin/nav.php';?><div>
+
+
         <div class="form-container">
              
             <div class="form1">

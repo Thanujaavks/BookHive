@@ -366,7 +366,7 @@ class Delivery extends Controller{
 
             Thank you for promptly preparing the order and making it ready for pickup. Your cooperation is invaluable in ensuring timely deliveries to our customers.
             
-            Warm regards,Readspot Team",
+            Warm regards,BookHive Team",
             'user_idPub' => $ownerDetails[0]->user_id,
             'sender_id'=>$user_id,
             'topic'=>"Delivery Status",
@@ -416,7 +416,7 @@ class Delivery extends Controller{
 
             Thank you for your cooperation throughout the delivery process. Should you have any further inquiries or require assistance, please feel free to reach out to us.
             
-            Best regards,Readspot Team",
+            Best regards,BookHive Team",
 
             'user_idPub' => $ownerDetails[0]->user_id,
             'sender_id'=>$user_id,
@@ -430,7 +430,7 @@ class Delivery extends Controller{
             Should you have any questions or need further assistance, please feel free to reach out to us. We're here to help!
             
             Best regards,
-            Readspot Team",
+            BookHive Team",
             'user_id'=>$customerDetails[0]->user_id,
             'reciever_email'=>$customerDetails[0]->email,
             

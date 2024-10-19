@@ -126,22 +126,8 @@
                         <label class="label-topic">Prev Event Image1</label><br>
                         <input type="file" id="picture" name="1stImg" accept="image/*" required>
                     </div>
-                    <div class="img-cont-content">
-                        <label class="label-topic">Prev Event Image2</label><br>
-                        <input type="file" id="picture" name="2ndImg" accept="image/*" required>
-                    </div>
-                    <div class="img-cont-content">
-                        <label class="label-topic">Prev Event Image3</label><br>
-                        <input type="file" id="picture" name="3rdImg" accept="image/*" required>
-                    </div>
-                    <div class="img-cont-content">
-                        <label class="label-topic">Prev Event Image4</label><br>
-                        <input type="file" id="picture" name="4thImg" accept="image/*" required>
-                    </div>
-                    <div class="img-cont-content">
-                        <label class="label-topic">Prev Event Image5</label><br>
-                        <input type="file" id="picture" name="5thImg" accept="image/*" required>
-                    </div>
+                    
+                    
                     <!-- <div class="pdf-cont">
                         <label class="label-topic">Upload Document</label><br>
                         <input type="file" id="pdf" name="pdf" accept=".pdf" required>
@@ -155,7 +141,7 @@
             <div class="modal-content">
                 <!-- <span class="close" onclick="closeModal()">&times;</span> -->
                 <h2>Record Added!</h2>
-                <p>Your record has been recorded. Wait for admin approval</p>
+                <p>Your record has been recorded. Wait for moderator approval</p>
                 <button onclick="closeModal()">OK</button>
             </div>
         </div>

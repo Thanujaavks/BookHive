@@ -100,8 +100,8 @@ class Superadmin extends Controller{
             //validate password
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
-            }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+            }elseif(strlen($data['pass'])<8){
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password
@@ -451,8 +451,8 @@ class Superadmin extends Controller{
             //validate password
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
-            }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+            }elseif(strlen($data['pass'])<8){
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password
@@ -580,7 +580,7 @@ class Superadmin extends Controller{
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
             }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password
@@ -716,10 +716,12 @@ class Superadmin extends Controller{
         // Send email using PHPMailer
         $mail = new PHPMailer(true);
 
+
+
         try {
             //Server settings
             $mail->isSMTP();
-            $mail->Host       = MAIL_HOST;  
+            $mail->Host       = MAIL_HOST;  // Specify your SMTP server
             $mail->SMTPAuth   = true;
             $mail->Username   = MAIL_USER; // SMTP username
             $mail->Password   = MAIL_PASS;   // SMTP password
@@ -1006,7 +1008,7 @@ public function restrictdelivery($user_id)
                 // if($user_role=='customers'){
                     if($this->superadminModel->updateUserStatus($user_id,$user_role)){
                         $subject = "Your account has been removed from the site";
-                        $body = "Dear $name,<br><br>We're pleased to inform you that your account has been successfully restored after resolving the necessary inquiries.<br><br>If you have any further questions or need assistance, please don't hesitate to contact us at support@readspot.com.<br><br>Thank you for your patience and understanding.<br><br>Best regards,<br>ReadSpot Team";
+                        $body = "Dear $name,<br><br>We're pleased to inform you that your account has been successfully restored after resolving the necessary inquiries.<br><br>If you have any further questions or need assistance, please don't hesitate to contact us at support@bookhive.com.<br><br>Thank you for your patience and understanding.<br><br>Best regards,<br>BookHive Team";
 
                         $this->sentEmails($email, $subject, $body); 
                         redirect('superadmin/removeList');

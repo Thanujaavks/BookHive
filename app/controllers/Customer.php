@@ -13,6 +13,8 @@ class Customer extends Controller {
     private $userModel;
     private $adminModel;
     private $chatModel;
+
+    private $moderatorModel;
   
     private $db;
     public function __construct(){
@@ -20,6 +22,7 @@ class Customer extends Controller {
             // redirect('landing/login');
         }
         $this->customerModel=$this->model('Customers');
+        $this->moderatorModel=$this->model('Moderators');
         $this->deliveryModel=$this->model('Deliver');
         $this->userModel=$this->model('User');
         $this->ordersModel=$this->model('Orders');
@@ -1552,13 +1555,16 @@ public function BuyNewBooks()
             redirect('landing/login');
         } else {
             $user_id = $_SESSION['user_id'];
-           
+            
             $customerDetails = $this->customerModel->findCustomerById($user_id); 
+            
             $customer_id=$customerDetails[0]->customer_id;
+            $contentPDetails = $this->moderatorModel->findContentByCusIdAll($customer_id);
             $contentDetails = $this->customerModel->findContentByCusId( $customer_id); 
             $unreadNotification = $this->publisherModel->getUnreadMessagesCount($user_id);
             // print_r($content_Details);
             $data = [
+                'contentdDetail' => $contentPDetails,
                 'customerDetails' => $customerDetails,
                 'customerImage' => $customerDetails[0]->profile_img,
                 'customerName' => $customerDetails[0]->first_name,
@@ -1781,15 +1787,17 @@ public function BuyNewBooks()
             
             if ($customerDetails) {
                 $customerid = $customerDetails[0]->customer_id;
-                $eventDetails = $this->customerModel->findEventByUserId($user_id);
+                $eventDetails = $this->customerModel->findEventByUserIdAll($user_id);
+                
             } else {
                 echo "Not found";
             }
         } else {
             echo "Not a customer";
         }
-           
+        
         $data = [
+            'eventDdetails' => $eventDetails,
             'customerid' => $customerid,
             'customerDetails' => $customerDetails,
             'eventDetails' => $eventDetails,
@@ -4075,8 +4083,8 @@ public function markReview()
         
         Best regards,
         
-        Readspot Team
-        readspot@gmail.com
+        BookHive Team
+        bookhive@gmail.com
         (+94112222345)";
        
         $orderId = $data['orderId'];

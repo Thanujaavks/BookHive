@@ -74,17 +74,17 @@
             </li>
             
             <li class="list">
-              <a href="<?php echo URLROOT; ?>/delivery/allorders" class="nav-link">
+              <a href="<?php echo URLROOT; ?>/delivery/deliveredorders" class="nav-link">
                 <i class="bx bxs-credit-card icon"></i>
                 <span class="link">Orders</span>
               </a>
             </li>
-            <li class="list">
+            <!-- <li class="list">
               <a href="<?php echo URLROOT; ?>/delivery/profile" class="nav-link">
                 <i class="bx bxs-book-heart icon"></i>
                 <span class="link">My Profile</span>
               </a>
-            </li>
+            </li> -->
           <div class="bottom-cotent">
             <li class="list">
               <a href="<?php echo URLROOT; ?>/delivery/notification" class="nav-link">

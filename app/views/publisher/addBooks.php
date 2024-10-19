@@ -4,7 +4,7 @@
 <head>
     <title>Add Books</title>
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/publisher/addbooks.css" />
-    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png">
+    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png">
 </head>
 <body>
     <?php require APPROOT.'/views/publisher/sidebar.php';?>

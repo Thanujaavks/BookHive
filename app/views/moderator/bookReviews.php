@@ -56,7 +56,7 @@
   <div class="table-container">
     <table id="eventTable">
       <tr>
-        <th>Profile Image</th>
+        <!-- <th>Profile Image</th> -->
         <th>Customer Name</th>
         <th>Book Name</th>
         <th>Book Review</th>
@@ -64,7 +64,7 @@
       </tr>
       <?php foreach($data['reviewDetails'] as $review):?>
       <tr>
-        <td><img src="<?php echo URLROOT;?>/assets/images/customer/ProfileImages/<?php echo $review->profile_img;?>" ></td>
+        <!-- <td><img src="<?php echo URLROOT;?>/assets/images/customer/ProfileImages/<?php echo $review->profile_img;?>" ></td> -->
         <td><?php echo $review->name;?></td>
         <td><?php echo $review->book_name;?></td>
         <td><?php echo $review->review;?></td>

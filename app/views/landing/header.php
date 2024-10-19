@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png">
+    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/customer/main.css"> <!--path changed-->
     <!-- <script src="./assets/js/prof.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/logo.png"
+    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png"
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="<?php echo URLROOT; ?>/assets/js/customer/Add.js"></script> <!--path changed-->
@@ -17,7 +17,7 @@
     <script src="<?php echo URLROOT; ?>/assets/js/customer/home.js"></script>
     <script src="<?php echo URLROOT; ?>/assets/js/customer/tables.js"></script> 
     <script src="<?php echo URLROOT; ?>/assets/js/customer/calender.js"></script> 
-    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/logo.png">
+    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png">
 
     
 
@@ -26,7 +26,7 @@
 <body>
     <header>
     <div class="head">
-        <img src="<?php echo URLROOT; ?>/assets/images/customer/logo.png" alt="logo" class="logo"> <!--path changed-->
+        <img src="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png" alt="logo" class="logo"> <!--path changed-->
         <div class="navig">
             <nav class="navigation">
                 <a href="<?php echo URLROOT; ?>/landing/index" data-head="index">Home</a>

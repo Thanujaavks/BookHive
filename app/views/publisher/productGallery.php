@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/ReadSpot.png">
+    <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/publisher/nav.css" />
@@ -44,7 +44,7 @@
                     <td><?php echo '<img src="' . URLROOT . '/assets/images/publisher/addbooks/' .  $bookDetails->img2 . '" alt="img2" style="width:30%;" onclick="viewImage(this.src)"> ';?></td>
                     <td>
                         <a href='#' onclick='viewBookOnly(<?php echo htmlspecialchars(json_encode($bookDetails)); ?>)'><i class="fas fa-eye"></i></a>
-                        <a href='<?php echo URLROOT; ?>/NewBooks/update/<?php echo $bookDetails->book_id; ?>'><i class='fa fa-edit' style='color:#09514C;'></i></a>
+                        <!-- <a href='<?php echo URLROOT; ?>/NewBooks/update/<?php echo $bookDetails->book_id; ?>'><i class='fa fa-edit' style='color:#09514C;'></i></a> -->
                         <a href='#' onclick='confirmDelete(<?php echo $bookDetails->book_id; ?>)'> <i class='fa fa-trash'></i></a>
                     </td>
                 </tr>
@@ -99,7 +99,7 @@
             <li id="nextButton">»</li>
         </ul>
         <div class="button-container">
-            <a href="<?php echo URLROOT; ?>/NewBooks/addbooks"><button>Add a Books</button></a>
+            <a href="<?php echo URLROOT; ?>/NewBooks/addbooks"><button>Add a Book</button></a>
         </div>
     </div>
     <script src="<?php echo URLROOT;?>/assets/js/publisher/table.js"></script>

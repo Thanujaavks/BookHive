@@ -86,6 +86,12 @@
       return $this->db->resultSet();
     }
 
+    public function findEventByUserIdAll($user_id) {
+      $this->db->query('SELECT * FROM events WHERE user_id = :user_id');
+      $this->db->bind(':user_id', $user_id);
+      return $this->db->resultSet();
+    }
+
     public function findFavoriteByCustomerId($customer_id) {
       $this->db->query('SELECT * FROM favorite WHERE customer_id = :customer_id');
       $this->db->bind(':customer_id', $customer_id);
@@ -834,6 +840,13 @@ public function findContentByCusId($customer_id){
   return $this->db->resultSet();
   
 }
+
+public function findContentByCusIdAll($customer_id){
+  $this->db->query('SELECT * FROM content  WHERE customer_id = :customer_id');
+  $this->db->bind(':customer_id', $customer_id);
+  return $this->db->resultSet();
+}
+
 public function findContent(){
   $this->db->query('SELECT * FROM content WHERE status="approval" ');
  

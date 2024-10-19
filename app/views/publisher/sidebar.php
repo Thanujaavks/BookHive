@@ -13,13 +13,9 @@
         <img src="<?php echo URLROOT; ?>/assets/images/publisher/bookhive.png" class="readSpot-logo">
         <span class="logo-name">BookHive</span>
         <!-- <img class="imgContact" src="<?php echo URLROOT; ?>/assets/images/publisher/contactUs.png"> -->
-         <span class="user"><?php echo $data['publisherName']?></span>
-         <?php foreach($data['publisherDetails'] as $publisherDetails): ?>
-        <?php
-                    $profileImage = empty($publisherDetails->profile_img) ? URLROOT . '/assets/images/publisher/person.jpg' : URLROOT . '/assets/images/landing/profile/' . $publisherDetails->profile_img ;
-                ?>
-        <?php endforeach; ?>
-        <img class="img" style="width: 40px;height: 40px;border-radius: 50%;" src="<?php echo $profileImage; ?>" onclick="toggleMenu()">
+         <span class="user"></span>
+
+        <img class="img" style="width: 40px;height: 40px;border-radius: 50%;" src="https://img.freepik.com/premium-photo/stylish-man-flat-vector-profile-picture-ai-generated_606187-310.jpg" onclick="toggleMenu()">
         <a href="<?php echo URLROOT; ?>/publisher/customerSupport" class="notification">
           <i class="bx bxs-bell icon"  ></i>
           <?php if (isset($data['unreadCount'])): ?>
@@ -30,14 +26,7 @@
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
-            <?php foreach($data['publisherDetails'] as $publisherDetails): ?>
-                <?php
-                      $profileImage = empty($publisherDetails->profile_img) ? URLROOT . '/assets/images/publisher/person.jpg' : URLROOT . '/assets/images/landing/profile/' . $publisherDetails->profile_img ;
-                        ?>
-                <?php endforeach; ?>
-                <img  src="<?php echo $profileImage; ?>" >
-                <h3><?php echo $data['publisherName']; ?></h3><!--NAME COMMENT-->
-            </div>
+
             <hr>
             
             <a href="<?php echo URLROOT; ?>/publisher/customerSupport" class="sub-menu-link"> <!--path changed-->
@@ -115,12 +104,12 @@
                 <span class="link">Notifications</span>
               </a>
             </li>
-            <li class="list">
+            <!-- <li class="list">
               <a href="<?php echo URLROOT; ?>/publisher/messages" class="nav-link">
                 <i class="bx bxs-message-alt-dots icon"></i>
                 <span class="link">Messages</span>
               </a>
-            </li>
+            </li> -->
             <br><br>
             <!-- <li class="list">
               <a href="<?php echo URLROOT; ?>/publisher/logout" class="nav-link">

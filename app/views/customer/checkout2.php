@@ -193,7 +193,7 @@
                             </div>
                             <div class="bank-details-row">
                                 <span class="label">Acc. Name:</span>
-                                <span class="detail">Readspot & Co. (Pvt.) Ltd.</span>
+                                <span class="detail">BookHive & Co. (Pvt.) Ltd.</span>
                             </div>
                             <div class="bank-details-row">
                                 <span class="label">Acc. No:</span>

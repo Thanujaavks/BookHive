@@ -109,7 +109,7 @@ function updateText() {
     setTimeout(() => {
         document.getElementById('dynamicHeading').innerText = headings[currentIndex];
         document.getElementById('dynamicText').innerText = texts[currentIndex];
-        document.getElementById('secondaryText').innerText = "being a part of 'ReadSpot' journey!";
+        document.getElementById('secondaryText').innerText = "being a part of 'BookHive' journey!";
 
         // Reset opacity after updating text
         setTimeout(() => {

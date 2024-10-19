@@ -14,7 +14,7 @@
         <span class="user"> Super Admin
           <!-- <?php echo $data['superadminName']?> -->
         </span>
-        <!-- <i class="bx bxs-user-circle icon"></i>  -->
+        <i class="bx bxs-user-circle icon"></i> 
 
       
         <?php foreach($data['superadminDetails'] as $deliveryDetails): ?>

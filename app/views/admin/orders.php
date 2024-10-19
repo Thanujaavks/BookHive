@@ -14,9 +14,9 @@
   <?php require APPROOT . '/views/admin/nav.php';?>
 
   <div class="search-bar" style="margin-top: 100px;">
-    <label for="birthday">Search Order by order date:</label>
-    <input type="date" class="search" id="live-search1"autocomplete="off">
-    <input type="text" class="search" id="live-search2" autocomplete="off" placeholder="Search by Order ID..." >
+    <!-- <label for="birthday">Search Order by order date:</label>
+    <input type="date" class="search" id="live-search1"autocomplete="off"> -->
+    <!-- <input type="text" class="search" id="live-search2" autocomplete="off" placeholder="Search by Order ID..." > -->
   </div>
 
   <div id="searchresult"></div>
@@ -53,7 +53,7 @@
       $("#live-search1").change(function(){
         var input = $(this).val();
         var searchType = 'order';
-        var inputType = 'date';
+        // var inputType = 'date';
         
         var formattedDate = new Date(input);
         var year = formattedDate.getFullYear();
@@ -93,7 +93,7 @@
           <th>Book ID</th>
           <th>Customer ID</th>
           <th>Quantitiy</th>
-          <th>Order Date</th>
+          <!-- <th>Order Date</th> -->
           <th>Status</th>
           <th>Total Price</th>
           <th>Total Weight</th>
@@ -105,7 +105,7 @@
             <td><?php echo $order->book_id; ?></td>
             <td><?php echo $order->customer_id; ?></td>
             <td><?php echo $order->quantity	; ?></td>
-            <td><?php echo $order->order_date; ?></td>
+            <!-- <td><?php echo $order->order_date; ?></td> -->
             <td>
               <?php 
                 if($order->status == 'delivered'){

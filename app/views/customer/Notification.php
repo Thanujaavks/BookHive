@@ -28,7 +28,7 @@
                             <p>
                                 <?php echo $msg->message ; ?>
                                 <br>
-                                <span><em><?php echo $msg->timestamp ; ?></em></span>
+                                <!-- <span><em><?php echo $msg->timestamp ; ?></em></span> -->
                             </p>
                             <button class="view-button notify-view-btn" onclick='viewNotification(<?php echo json_encode($msg); ?>)'>
                                 <i class="fas fa-eye"></i>

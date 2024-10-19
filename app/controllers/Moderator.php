@@ -391,18 +391,24 @@ require APPROOT . '\vendor\autoload.php';
     public function contents(){
       if (!isLoggedInModerator()) {
         redirect('landing/login');
-      }else{
+      } else {
         $user_id = $_SESSION['user_id'];
-        $contentDetails=$this->moderatorModel->findPendingContents();
+        $contentDetails = $this->moderatorModel->findPendingContents();
+        $contentDetails_all = $this->moderatorModel->findContents();
         $moderatorDetails = $this->moderatorModel->findmoderatorById($user_id);
         $data = [
           'moderatorDetails' => $moderatorDetails,
-          'moderatorName'=>$moderatorDetails[0]->name,
-          'contentDetails'=>$contentDetails
-      ];
-        $this->view('moderator/contents',$data);
+          'moderatorName' => $moderatorDetails[0]->name,
+          'contentDetails' => $contentDetails,
+          'contentDetailsAll' => $contentDetails_all
+
+        ];
+        
+        $this->view('moderator/contents', $data);
+        
       }
     }
+    
     public function approveContent(){
       if (!isLoggedInModerator()) {
         redirect('landing/login');

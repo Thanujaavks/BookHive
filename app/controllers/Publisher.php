@@ -1803,7 +1803,9 @@ public function stores(){
             $unreadCount = $this->publisherModel->getUnreadMessagesCount($user_id);
 
             $ChatDetails=$this->publisherModel->getChatDetailsById($user_id);
-            $sender_id=$ChatDetails[0]->name;
+            if (isset($ChatDetails) && is_array($ChatDetails) && !empty($ChatDetails)) {
+                $sender_id = $ChatDetails[0]->name;
+            }
            
             $senderDetails=$this->publisherModel->finduserDetails($sender_id);
             // print_r($senderDetails);
@@ -1812,7 +1814,7 @@ public function stores(){
                 'user_id'=>$user_id,
                 'publisherName'=>$publisherDetails[0]->name,
                 'publisherDetails'=>$publisherDetails,
-                'senderName'=>$senderDetails->name,
+                'senderName'=>$senderDetails !== false && is_object($senderDetails) && isset($senderDetails->name) ? $senderDetails->name : '',
                 'unreadCount'=>$unreadCount
 
 //             $ChatDetails = $this->publisherModel->getChatDetailsById($user_id);

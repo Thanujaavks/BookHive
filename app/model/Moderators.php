@@ -27,6 +27,23 @@
       $this->db->query('SELECT * FROM content WHERE status = "pending"');
       return $this->db->resultSet();
     }
+
+    public function findContents(){
+      $this->db->query('SELECT * FROM content');
+      return $this->db->resultSet();
+    }
+
+    public function findContentByCusIdAll($userId) {
+      // Prepare the SQL query
+      $this->db->query('SELECT * FROM content WHERE customer_id = :userId');
+      
+      // Bind the userId parameter to the prepared statement
+      $this->db->bind(':userId', $userId);
+      
+      // Execute the query and return the results
+      return $this->db->resultSet();
+  }
+  
     public function approveEvent($id){
       $this->db->query("UPDATE events SET status = 'Approved' WHERE id = :id");
       $this->db->bind(':id', $id);

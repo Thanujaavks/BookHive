@@ -15,7 +15,7 @@
     <title>Verification</title>
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/customer/LoginPageCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/logo.png">
+    <link rel="icon" type="image/jpg" href="<?php echo URLROOT; ?>/assets/images/customer/bookhive.png">
 </head>
 <body>
     <div class="container">

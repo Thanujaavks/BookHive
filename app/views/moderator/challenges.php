@@ -56,8 +56,8 @@
         <th>Challenge title</th>
         <th>Time Limit</th>
         <th>Description</th>
-        <th>Start Date</th>
-        <th>End Date</th>
+        <!-- <th>Start Date</th> -->
+        <!-- <th>End Date</th> -->
         <th>Delete Challenge</th>
       </tr>
       <?php foreach($data['challengeDetails'] as $challenge): ?>
@@ -67,8 +67,8 @@
           <td><?php echo substr($challenge->description, 0, 10); ?>...
             <button onclick="showFullDescription('<?php echo $challenge->description;?>')">See more..</button>
           </td>
-          <td><?php echo $challenge->date;?></td>
-          <td><?php echo $challenge->end_date;?></td>
+          <!-- <td><?php echo $challenge->date;?></td> -->
+          <!-- <td><?php echo $challenge->end_date;?></td> -->
           <td><i class="fa fa-solid fa-trash" onclick="deleteChallenge('<?php echo $challenge->quiz_id;?>')"></i></td>
         </tr>
       <?php endforeach;?>

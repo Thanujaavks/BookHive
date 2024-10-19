@@ -26,9 +26,6 @@
             <div class="button-container">
                 <a href="<?php echo URLROOT; ?>/landing/login"><button class="btn-con-log">login</button></a>
             </div>
-            <!-- <div>
-                <span class="copyright">ReadSpot &copy;2023</span>
-            </div> -->
         </div>
         <div class="register">
             <div class="back-btn-div-login">

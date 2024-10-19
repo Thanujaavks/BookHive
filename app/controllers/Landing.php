@@ -103,8 +103,8 @@ class Landing extends Controller{
     //         //validate password
     //         if(empty($data['pass'])){
     //             $data['pass_err']='Please enter password';      
-    //         }elseif(strlen($data['pass'])<6){
-    //             $data['pass_err']='Password must be atleast 6 characters'; 
+    //         }elseif(strlen($data['pass'])<8){
+    //             $data['pass_err']='Password must be atleast 8 characters'; 
     //         }
 
     //          //validate confirm password
@@ -332,12 +332,12 @@ class Landing extends Controller{
                     try {
                         //Server settings
                         $mail->isSMTP();
-                        $mail->Host       = MAIL_HOST;
-                        $mail->SMTPAuth   = true;
-                        $mail->Username   = MAIL_USER;
-                        $mail->Password   = MAIL_PASS;
+                        $mail->Host = MAIL_HOST;  // Specify your SMTP server
+                        $mail->SMTPAuth = true;
+                        $mail->Username = MAIL_USER; // SMTP username
+                        $mail->Password = MAIL_PASS; // SMTP password
                         $mail->SMTPSecure = MAIL_SECURITY;
-                        $mail->Port       = MAIL_PORT;
+                        $mail->Port = MAIL_PORT;
         
                         //Recipients
                         $mail->setFrom('readspot27@gmail.com', 'READSPOT');
@@ -352,7 +352,7 @@ class Landing extends Controller{
                         redirect('landing/verifyemail');
                     }catch (Exception $e) {
                             error_log('Email sending failed: ' . $e->getMessage());
-                            $data['email_err'] = 'Something went wrong. Please try again later.';
+                            $data['email_err'] =$e->getMessage();
                             $this->view('landing/sendEmailCustomer', $data); // Pass $data to the view
                             exit; 
                         }
@@ -502,8 +502,8 @@ class Landing extends Controller{
             //validate password
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
-            }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+            }elseif(strlen($data['pass'])<8){
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password
@@ -615,8 +615,8 @@ class Landing extends Controller{
             //validate password
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
-            }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+            }elseif(strlen($data['pass'])<8){
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password
@@ -729,8 +729,8 @@ class Landing extends Controller{
             //validate password
             if(empty($data['pass'])){
                 $data['pass_err']='Please enter password';      
-            }elseif(strlen($data['pass'])<6){
-                $data['pass_err']='Password must be atleast 6 characters'; 
+            }elseif(strlen($data['pass'])<8){
+                $data['pass_err']='Password must be atleast 8 characters'; 
             }
 
              //validate confirm password

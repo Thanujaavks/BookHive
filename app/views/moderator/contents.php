@@ -27,11 +27,11 @@
       </tr>
       </thead>
       <tbody>
-      <?PHP foreach($data['contentDetails'] as $content): ?>
+      <?PHP foreach($data['contentDetailsAll'] as $content): ?>
       <tr>
         <td><?php echo $content->content_id; ?></td>
         <td><?php echo $content->topic; ?></td>
-        <td><?php echo $content->text; ?></td>
+        <td><p class="content"><?php echo $content->text; ?></p></td>
         <td><img class="content-img" src="<?php echo URLROOT; ?>/assets/images/landing/addContents/<?php echo $content->img; ?>" style="width:20%;">
 </td>
         <td>
@@ -40,9 +40,7 @@
             }
             ?>
           <td class="action-buttons">
-          <button class="view-button" >
-            <i class="fas fa-eye"></i>
-            </button>
+
 
 
                         <button class="update-button" data-content-id="<?php echo $content->content_id; ?>" >
@@ -149,27 +147,29 @@ viewButtons.forEach(button => {
   button.onclick = function() {
     // Open the details modal
     openDetailsModal();
+
     // Get the content details from the corresponding content <div> tag
     const contentId = button.parentElement.parentElement.querySelector('td:first-child').textContent;
     const contentTitle = button.parentElement.parentElement.querySelector('td:nth-child(2)').textContent;
-    const contentSummary = button.parentElement.parentElement.querySelector('td:nth-child(3)').textContent;
+    const contentSummary = button.parentElement.parentElement.querySelector('.content').textContent;
     const contentImageSrc = button.parentElement.parentElement.querySelector('.content-img').src;
     const contentDocSrc = button.parentElement.parentElement.querySelector('a') ? button.parentElement.parentElement.querySelector('a').href : null;
-    
+
     // Construct the content details HTML
     const contentDetailsHTML = `
-      <p><b>Content ID: ${contentId}</b></p>
-      <p><b>Content Title: ${contentTitle}</b></p>
-      <p><b>Content Summary:</p></b> 
+      <p><b>Content ID:</b> ${contentId}</p>
+      <p><b>Content Title:</b> ${contentTitle}</p>
+      <p><b>Content Summary:</b></p> 
       <p>${contentSummary}</p>
-      <img src="${contentImageSrc}" alt="Content Image" style="width: 40%">
-      ${contentDocSrc ? `<a href="${contentDocSrc}">Content PDF</a>` : ''}
+      <img src="${contentImageSrc}" alt="Content Image" style="width: 40%;">
+      ${contentDocSrc ? `<a href="${contentDocSrc}" target="_blank">Content PDF</a>` : ''}
     `;
-    console.log(contentDetailsHTML);
+
     // Set the content details to the modal content
     detailsContent.innerHTML = contentDetailsHTML;
   };
 });
+
 
     const imageModal = document.getElementById('imageModal');
     const enlargedImg = document.getElementById('enlargedImg');

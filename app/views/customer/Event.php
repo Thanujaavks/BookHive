@@ -16,6 +16,7 @@
                 <?php echo '
                     <br><br><h3 style="text-align:center;">No events added yet.</h3>'; ?>
             <?php else : ?>
+                
             <div class="myevent">
                 <div class="event-search" id="searchForm" onsubmit="handleSearch()">
                     <input type="text" placeholder="Search.." name="search" id="searchInput">
@@ -25,9 +26,10 @@
                 <table border="1" id="eventTable">
                     <thead>
                         <tr>
-                            <th onclick="sortTable(0)">Contents</th>
+                            <th onclick="sortTable(0)">Title</th>
                             <th onclick="sortTable(1)">Category</th>
-                            <th>VIew/Delete </th>
+                            <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +37,7 @@
                         <tr>
                             <td><?php echo $event->title; ?></td>
                             <td><?php echo $event->category_name; ?></td>
+                            <td><?php echo $event->status; ?></td>
                             <td class="action-buttons">
                                 <a href="<?php echo URLROOT; ?>/customer/UpdateEvent/<?php echo $event->id; ?>" style="text-decoration: none;">
                                     <button class="update-button">

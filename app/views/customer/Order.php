@@ -1,5 +1,5 @@
 <?php
-    $title = "Content";
+    $title = "My Order";
     require APPROOT . '/views/customer/header.php'; //path changed
 ?>
 <?php
