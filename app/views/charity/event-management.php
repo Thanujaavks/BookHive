@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=<?php echo URLROOT . "/assets/css/charity/eventManagement.css" ?>>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <title>ReadSpot Online Book store</title>
+    <title>BookHive Online Book store</title>
 </head>
 
 <style>
@@ -75,7 +75,7 @@
 <body>
     <header>
         <div>
-            <img id="logo" src=<?= URLROOT . "/assets/images/charity/ReadSpot.png" ?> alt="Logo">
+            <img id="logo" src=<?= URLROOT . "/assets/images/charity/bookhive.png" ?> alt="Logo">
 
         </div>
         <nav>
@@ -83,9 +83,9 @@
 
             <a href="event" class="active">Event Management</a>
             <a href="donation">Donation Requests</a>
-            <a href="notification">
+            <!-- <a href="notification">
                 <i class="fas fa-bell" id="bell"></i>
-            </a>
+            </a> -->
         </nav>
         <div class="dropdown" style="float:right;">
             <button class="dropdown-button">

@@ -23,10 +23,10 @@
             <a href="./event">Event Management</a>
             <a href="donation">Donation Requests</a>
 
-            <a href="">
+            <!-- <a href="">
                 <i class="fas fa-bell" id="bell"></i>
-                <!-- <span class="notification-text">Notification</span> -->
-            </a>
+                <span class="notification-text">Notification</span>
+            </a> -->
         </nav>
         <div class="dropdown" style="float:right;">
             <button class="dropdown-button">

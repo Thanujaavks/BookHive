@@ -28,9 +28,9 @@
 
             <a href="event">Event Management</a>
             <a href="donation" class="active">Donation Requests</a>
-            <a href="notification">
+            <!-- <a href="notification">
                 <i class="fas fa-bell" id="bell"></i>
-            </a>
+            </a> -->
         </nav>
         <div class="dropdown" style="float:right;">
             <button class="dropdown-button">

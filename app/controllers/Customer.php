@@ -1712,7 +1712,8 @@ public function BuyNewBooks()
                     $bookType = str_replace('Quantity', '', $key);
                     $bookTypes[] = $bookType;
                     // Extract quantity from corresponding input field
-                    $quantityKey = $bookType . 'Quantity';
+                    $quantityKey = $bookType . '_Quantity';
+                    // echo $_POST[$quantityKey];
                     $quantity = isset($_POST[$quantityKey]) ? intval($_POST[$quantityKey]) : 0;
                     $quantities[] = $quantity;
                 }
@@ -1741,6 +1742,8 @@ public function BuyNewBooks()
                 // flash('add_success','You are added the book  successfully');
                 // redirect('customer/UsedBooks');
                 $_SESSION['showModal'] = true; // Set session variable to true
+                
+                // print_r($_POST['book_non-fiction']['on']);
                 redirect('customer/Donateform');
             }else{
                 die('Something went wrong');
